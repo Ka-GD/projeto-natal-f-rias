@@ -15,6 +15,7 @@ import vandinha from '../../../assets/vandinha.png'
 import goro from '../../../assets/goro.png'
 import natal from '../../../assets/natal.png'
 import seta from '../../../assets/seta.png'
+import lupa from '../../../assets/Lupa.png'
 export  default function Header() {
     return (
         <BrowserRouter>
@@ -26,7 +27,8 @@ export  default function Header() {
             </section>
             <nav>
             <ul className={s.navList}>
-                   
+                
+                    <li><Link className={s.link} to="/"><img src={lupa} alt="Logo" /></Link></li>
                     <li><Link className={s.link} to="/"><img src={casinha} alt="Logo" />Início</Link></li>
                     <li><Link className={s.link} to="/Filmes"><img src={filmes} alt="Logo" />Filmes</Link></li>
                     <li><Link className={s.link} to="/Series"><img src={series} alt="Logo" />Séries</Link></li>
